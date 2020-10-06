@@ -17,19 +17,19 @@ int main(){
             cin >> A[i].a;
             A[i].b = llabs(X-A[i].a);
         }
-        sort(A,A+n,tang);
-        // bool check;
-        // for (long long i = 0; i < n ; i++ ){
-        //     check = false;
-        //     for (long long j = 0; j < n - 1; j++) {
-        //         if (A[j].b > A[j+1].b){
-        //             swap(A[j].b,A[j+1].b);
-        //             swap(A[j].a,A[j+1].a);
-        //             check = true;
-        //         }
-        //     }
-        //     if (!check) break;
-        // }
+        // sort(A,A+n,tang);
+        bool check;
+        for (long long i = 0; i < n ; i++ ){
+            check = false;
+            for (long long j = 0; j < n - 1; j++) {
+                if (A[j].b > A[j+1].b){
+                    swap(A[j].b,A[j+1].b);
+                    swap(A[j].a,A[j+1].a);
+                    check = true;
+                }
+            }
+            if (!check) break;
+        }
         for (long long i = 0; i< n; i++) cout << A[i].a << " ";
         cout << endl;
     }

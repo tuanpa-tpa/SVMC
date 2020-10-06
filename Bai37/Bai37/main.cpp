@@ -16,8 +16,6 @@ int devideAndConquer(int n, long long k){
     if (k < m) return devideAndConquer(n-1, k);
         else return devideAndConquer(n-1, k-m);
 }
-
-
 int main(int argc, const char * argv[]) {
     int t,n;
     long long k;

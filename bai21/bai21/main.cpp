@@ -18,9 +18,6 @@ void xuat(){
 }
 
 void sinh(){
-//    while (str[i] == 49) i--;
-//    str[i] = 49;
-//    for (unsigned long j = i+1; j<n; j++) str[j] = 48;
     i = strlen(str) - 1;
     n = i+1;
     while (i>=0 && str[i] != 48 ) { str[i] = 48; i--;}

@@ -11,13 +11,13 @@
 #include <string>
 using namespace std;
 int main(int argc, const char * argv[]) {
-    int t,k,d[1000]={0};
+    int t,k,d[1000000]={0};
     string s;
     cin >> t;
     while (t--) {
         priority_queue< int > a;
         cin >> k >> s;
-        for (int i = 0; i< 1000; i++) d[i] = 0;
+        for (int i = 0; i< 1000000; i++) d[i] = 0;
         for (int i = 0; i< s.size(); i++) d[s[i]]++;
         for (int i = 0; i< s.size(); i++){
             if (d[s[i]] > 0){

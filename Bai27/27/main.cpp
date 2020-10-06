@@ -41,7 +41,6 @@ int main(int argc, const char * argv[]) {
         X[1] = n;
         k = 1;
         while (ok) {
-//            next();
             cout << "(";
             for (int j = 1; j< k ;j++) cout << X[j] << " ";
             cout << X[k] <<") ";
